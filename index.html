@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        background-color: #f4f4f4;
+    }
+
+    .nav{
+        background-color: #4CAF50;
+        color: white;
+        box-shadow: 0 4px 10px 0 rgba(0,0,0,0.4);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px;
+        
+    }
+
+    .nav a{
+        text-decoration: none;
+        align-items: center;
+        background-color: #fff;
+        border-radius: 6px;
+        width: 80px;
+        text-align: center;
+        padding: 10px;
+        cursor: pointer;
+        margin-right: 60px;
+        box-shadow: 0 4px 10px 0 rgba(0,0,0,0.4);
+    }
+    .nav a:hover{
+        background-color: #45a049;
+        color: #fff;
+    }
+
+    .container{
+        margin:180px auto;
+        background-color: #fff;
+        padding: 30px;
+        width: 800px;
+        box-shadow: 0 4px 10px 0 rgba(0,0,0,0.4);
+        border-radius: 6px;
+    }
+
+    h2{
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+    }
+
+    .login,
+    .register{
+        text-align: center;
+        border: none;
+        width: 150px;
+        height: 50px;
+        background-color: #4CAF50;
+        color: white;
+        border-radius: 15px;
+        line-height: 20px;
+        font-size: 20px;
+        padding: 15px;
+        cursor: pointer;
+        box-shadow: 0 4px 10px 0 rgba(0,0,0,0.4);
+        display: inline-block;
+        gap: 500;
+        margin-left: 140px;
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+    .login:hover,
+    .register:hover{
+        background-color: #45a049;
+    }
+
+
+</style>
+<body>
+    <div class="nav">
+        <h1>WebPage</h1>
+        <a href="index.html">Home</a>
+    </div>
+    <div class="container">
+        <h2>Welcome to our website!!</h2>
+        <a href="login.php" class="login">Login</a>
+        <a href="register.php" class="register">Register</a>
+    </div>
+</body>
+</html>
