@@ -48,7 +48,8 @@
         margin:180px auto;
         background-color: #fff;
         padding: 30px;
-        width: 800px;
+        width:90%;
+        max-width: 800px;
         box-shadow: 0 4px 10px 0 rgba(0,0,0,0.4);
         border-radius: 10px;
     }
@@ -75,8 +76,14 @@
         cursor: pointer;
         box-shadow: 0 4px 10px 0 rgba(0,0,0,0.4);
         display: inline-block;
-        gap: 500;
-        margin-left: 140px;
+        margin: 10px auto;
+    }
+
+    .button-group{
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap;  /* allows wrapping on small screens */
     }
 
     a{
@@ -124,6 +131,7 @@
             font-size: 18px;
         }
     }
+    
 
 
 </style>
