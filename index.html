@@ -92,7 +92,7 @@
         .container{
             width: 80%;
             margin: 140px auto;
-            padding: 15px;
+            padding: 20px;
             cursor: pointer;
         }
 
@@ -100,11 +100,28 @@
             font-size: 30px;
         }
 
+        .login, .register{
+            width: 100%;      /* full width on phones */
+            font-size: 18px;
+        }
+
+    }
+
+    @media (max-width: 576px){
+        .container{
+            width: 95%;
+            margin: 140px auto;
+            padding: 20px;
+        }
+        
+        h2{
+            font-size: 30px;
+        }
+
         .login,
         .register{
-            width: 30%;
-            margin-left: 35px;
-            font-size: 15px;
+            width: 100%;        /* full width buttons */
+            font-size: 18px;
         }
     }
 
