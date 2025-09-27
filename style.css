@@ -131,7 +131,36 @@ a:hover{
     button{
         font-size: 14px;
     }
-
-    
-
 }
+
+/* Extra small devices (phones <576px) */
+@media (max-width: 576px){
+    .nav{
+        flex-direction: row; 
+        font-size: 14px;        
+    }
+
+    .nav-buttons{
+        margin-right: 20px;
+        
+    }
+
+    .container{
+        width: 90%;                  
+        margin: 80px auto;
+        padding: 20px;           
+    }
+
+    h2{
+        font-size: 20px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    button{
+        font-size: 16px;
+        padding: 12px;
+    }
+}
+
