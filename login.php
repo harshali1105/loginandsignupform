@@ -44,33 +44,25 @@ if(isset($_POST['submit'])){
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <style>
-      i{
-          position:absolute; 
-          right:330px; 
-          top:51%; 
-          transform:translateY(-50%); 
-          cursor:pointer;
-        }
+      .password-wrapper {
+        position: relative;
+        width: 100%;
+    }
 
-        @media (max-width: 768px){
-            i{
-                position:absolute; 
-                right:99px; 
-                top:50%; 
-                transform:translateY(-50%); 
-                cursor:pointer;
-            }
-        }
+    .password-wrapper input {
+        width: 100%;
+        padding-right: 40px;      
+        box-sizing: border-box;
+    }
 
-      @media (max-width: 576px){
-            i{
-                position:absolute; 
-                right:60px; 
-                top:32.5%; 
-                transform:translateY(-50%); 
-                cursor:pointer;
-            }
-        }
+    .password-wrapper i {
+        position: absolute;
+        right: 10px;              
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        font-size: 18px;
+    }
     </style>
   </head>
   <body>
@@ -89,8 +81,10 @@ if(isset($_POST['submit'])){
 
         <form action="login.php" method="POST">
           <input type="email" id="email" name="email" placeholder="Enter Your Email" required />
-          <input type="password" id="password" name="password" placeholder="Enter Your Password" required />
-          <i class="fa-solid fa-eye" id="togglePassword" </i>
+          <div class="password-wrapper">
+                <input type="password" id="password" name="password" placeholder="Enter Your Password" required />
+                <i class="fa-solid fa-eye" id="togglePassword" ></i>
+            </div>
           <button type="submit" name="submit" class="btn">Submit</button>
           <p>Don't have an account ? <a href="register.php">Register here</a></p>
         </form>
