@@ -19,7 +19,7 @@ body{
         
     }
 
-    .nav a{
+.nav a{
         text-decoration: none;
         align-items: center;
         background-color: #fff;
@@ -31,13 +31,13 @@ body{
         box-shadow: 0 4px 10px 0 rgba(0,0,0,0.4);
     }
 
-    .nav a:hover{
+.nav a:hover{
          text-decoration: none;
         background-color: #45a049;
         color: #fff;
     }
 
-    .nav-buttons{
+.nav-buttons{
         display: flex;
         gap: 10px;
         margin-right: 60px;
@@ -99,4 +99,39 @@ a{
 
 a:hover{
     text-decoration: underline;
+}
+
+
+/*Media Quesries*/
+@media (max-width: 992px){
+    .container{
+        width: 90%;
+        margin: 60px auto;
+    }
+}
+
+@media (max-width: 768px){
+    .nav{
+        flex-direction: row;
+    }
+    .nav-buttons {
+        margin-right: 40px;
+        flex-wrap: wrap;
+    }
+
+    .container{
+        width: 80%;
+        margin: 100px auto;
+    }
+
+    h2{
+        font-size: 22px;
+    }
+
+    button{
+        font-size: 14px;
+    }
+
+    
+
 }
