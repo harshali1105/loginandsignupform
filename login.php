@@ -61,6 +61,16 @@ if(isset($_POST['submit'])){
                 cursor:pointer;
             }
         }
+
+      @media (max-width: 576px){
+            i{
+                position:absolute; 
+                right:60px; 
+                top:32.5%; 
+                transform:translateY(-50%); 
+                cursor:pointer;
+            }
+        }
     </style>
   </head>
   <body>
