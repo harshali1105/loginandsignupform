@@ -43,6 +43,25 @@ if(isset($_POST['submit'])){
     <title>Login</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <style>
+      i{
+          position:absolute; 
+          right:330px; 
+          top:51%; 
+          transform:translateY(-50%); 
+          cursor:pointer;
+        }
+
+        @media (max-width: 768px){
+            i{
+                position:absolute; 
+                right:99px; 
+                top:50%; 
+                transform:translateY(-50%); 
+                cursor:pointer;
+            }
+        }
+    </style>
   </head>
   <body>
     <div class="nav">
@@ -61,7 +80,7 @@ if(isset($_POST['submit'])){
         <form action="login.php" method="POST">
           <input type="email" id="email" name="email" placeholder="Enter Your Email" required />
           <input type="password" id="password" name="password" placeholder="Enter Your Password" required />
-          <i class="fa-solid fa-eye" id="togglePassword" style="position:absolute; right:330px; top:51%; transform:translateY(-50%); cursor:pointer;"></i>
+          <i class="fa-solid fa-eye" id="togglePassword" </i>
           <button type="submit" name="submit" class="btn">Submit</button>
           <p>Don't have an account ? <a href="register.php">Register here</a></p>
         </form>
